@@ -1,0 +1,157 @@
+main {
+    
+    background: url(../assets/hero-background.png) no-repeat top/contain;
+    background-position: center;
+    background-size: 130% 100%;
+    .hero {
+        max-width: 70rem;
+        margin-inline: auto;
+        margin-top: 10.25rem;
+        height: 55rem;
+    & div{
+        max-width: 41rem;
+        margin-inline: auto;
+        text-align: center;
+        & h1 {
+            color: var(--text-title);
+            margin-block: 32px;
+        }
+        
+        & p {
+            color: var(--text-label);
+            text-align: center;
+            width: 30rem;
+            margin-inline: auto;
+        }
+    }
+    
+}
+}
+
+.book {
+    max-width: 75rem;
+    height: 25rem;
+    margin-inline: auto;
+    margin-top: 10.5rem;
+    text-align: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 14.6875rem;
+    padding: 8px 2px;
+
+    & img {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    & .words {
+        margin-inline: auto;
+    }
+            
+    & .livro {
+        position: absolute;
+        top: 0;
+        left: 32rem;
+        opacity: 0;
+    }
+    & .prancheta {
+        position: absolute;
+        left: 0;
+        bottom: 80.13px;
+        opacity: 0;
+
+    }
+    & .bola {
+        position: absolute;
+        right: 0;
+        bottom: 80.13px;
+        opacity: 0;
+    }
+    & h3 {
+        color: var(--text-label);
+        margin-inline: auto;
+        width: 100%;
+        opacity: .5;
+    }
+}
+
+.book:hover {
+    /* animation: slideDown 3s ease forwards; */
+    & .livro {
+        opacity: 0;
+        animation: appear1 500ms ease forwards;
+        transition: transform 0.4s ease;
+
+
+        &:hover {
+            transform: rotate(20deg);
+        }
+
+    }
+    & .words {
+        & .word-1 {
+            animation: appear1 1s ease forwards;
+
+            & strong {
+                animation: last 1s ease forwards;
+
+            }
+        }
+        & .word-2 {
+            animation: appear1 1s 500ms ease forwards;
+            & strong {
+                animation: last 1s 500ms ease forwards;
+
+            }
+        }
+        & .word-3 {
+            animation: appear1 1s 1s ease forwards;
+            
+            & strong {
+                animation: last 1s 1s ease forwards;
+            }
+        }
+    }
+            
+    & .prancheta {
+        opacity: 0;
+        animation: appear1 500ms 500ms ease forwards;
+
+        transition: transform 0.4s ease;
+
+        &:hover {
+            transform: rotate(20deg);
+        }
+
+    }
+    & .bola {
+        opacity: 0;
+        animation: appear1 500ms 1s ease forwards;
+        transition: transform 0.4s ease;
+
+        &:hover {
+            transform: rotate(20deg);
+        }
+
+    }
+    & h3 {
+        opacity: .5;
+
+    }
+}
+
+@keyframes appear1 {
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes last {
+    100% {
+        color: var(--blue-light);
+    }
+}
+
+
+/* 3segundos */

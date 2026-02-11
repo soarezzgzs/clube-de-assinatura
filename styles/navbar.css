@@ -1,0 +1,22 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 70rem;
+    margin-inline: auto;
+    padding-top: 3.5rem;
+
+    & a {
+        color: var(--text-title);
+        background-color: var(--pink-dark);
+        width: 5.5625rem;
+        padding: 12px 20px 12px 20px;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    & a:hover {
+        transition: all 0.2s ease;
+        background-color: var(--pink-base);
+    }
+}

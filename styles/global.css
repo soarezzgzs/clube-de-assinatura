@@ -1,0 +1,65 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --pink-light: #c59dd2;
+    --pink-base: #9547a5;
+    --pink-dark: #7d298a;
+    --pink-low: #3f0f41;
+    --blue-light: #73b6d2;
+    --blue-base: #358bb9;
+    --blue-mid: #2374a4;
+    --blue-dark: #144a72;
+    --blue-low: #08233c;
+    --shape-stroke: #002347;
+    --shape-hover: #001933;
+    --shape-base: #000f1f;
+    --shape-background: #00050a;
+
+    --text-title: #f8fbfb;
+    --text-body: #e2e7e9;
+    --text-label: #bac6c9;
+
+    --text-family: "Raleway", sans-serif;
+
+    --body-md: 500 16px/140% var(--text-family);
+    --body-sm: 500 14px/140% var(--text-family);
+    --body-lg: 500 20px/140% var(--text-family);
+    --body-xs: 500 12px/140% var(--text-family);
+}
+
+body {
+    font: var(--body-md);
+    background-color: var(--shape-background);
+    color: var(--text-body);
+}
+
+h1 {
+    font: 700 48px/120% var(--text-family);
+}
+
+h2 {
+    font: 700 40px/120% var(--text-family);
+    
+}
+
+h3 {
+    font: 700 32px/120% var(--text-family);
+}
+
+h4 {
+    font: 700 16px/120% var(--text-family);
+}
+
+button {
+    font: 700 14px/120% var(--text-family);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    font: 500 14px/120% var(--text-family);
+}

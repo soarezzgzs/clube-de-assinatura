@@ -1,0 +1,113 @@
+.kit-mensal {
+    max-width: 70rem;
+    margin-inline: auto;
+    text-align: center;
+
+    & > div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    & p {
+        margin-bottom: 13.875rem;
+
+    }
+
+    & .book-kit {
+        margin-inline: auto;
+        position: relative;
+        max-width: 70rem;
+        height: 920px;
+        & .mark-purple, & .mark-yellow, .arrow-3, .p-3, .p-1, .arrow-1, .pin, .arrow-2, .p-2 {
+            transition: transform 0.5s ease-out;
+        }
+        
+        &:hover {
+            /* terceira parte */
+            & .mark-purple {
+                transform: translate(350px, 10px) rotate(20deg);
+            }
+            & .mark-yellow {
+                transform: translate(250px, -70px) rotate(10deg);
+            }
+            & .arrow-3 {
+                transform: translate(310px, 300px);
+            }
+            & .p-3 {
+                transform: translate(250px, 510px);
+            }
+            /* primeira parte */
+            & .arrow-1 {
+                transform: translate(-310px, -300px);
+            }
+            & .p-1 {
+                transform: translate(-400px, -230px);
+            }
+            /* segunda parte */
+            & .pin {
+                transform: translate(-250px, 270px) rotate(-10deg);
+            }
+            & .arrow-2 {
+                transform: translate(-360px, 120px);
+            }
+            & .p-2 {
+                transform: translate(-370px, 140px);
+            }
+
+        }
+        
+        & .kit-book {
+            width: 467px;
+            height: 617px;
+            position: absolute;
+            z-index: 2;
+        }
+        & .mark-purple {
+            position: absolute;
+            width: 172px;
+            height: 536px;
+            transform: translate(0, 0) rotate(0);
+        }
+        & .mark-yellow {
+            position: absolute;
+            width: 172px;
+            height: 536px;
+            transform: translate(0, 0) rotate(0);
+            z-index: 1;
+        }
+        & .pin {
+            position: absolute;
+            transform: translate(0, 0);
+            width: 222px;
+        }
+        & .arrow-1 {
+            position: absolute;
+            transform: translate(0, 0);
+        }
+        & .arrow-2 {
+            position: absolute;
+            transform: translate(0, 0) rotate(0);
+
+        }
+        & .arrow-3 {
+            position: absolute;
+            transform: translate(0, 0);
+            
+        }
+        & .p-1{
+            position: absolute;
+            transform: translate(0, 0);
+        }
+        & .p-2 {
+            position: absolute;
+            transform: translate(0, 0);
+
+        }
+        & .p-3 {
+            position: absolute;
+            transform: translate(0, 0);
+
+        }
+    }
+}
