@@ -6,8 +6,8 @@ main {
     .hero {
         max-width: 70rem;
         margin-inline: auto;
-        margin-top: 10.25rem;
-        height: 55rem;
+        margin-top: 5rem;
+        height: 45rem;
     & div{
         max-width: 41rem;
         margin-inline: auto;
